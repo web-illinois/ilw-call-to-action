@@ -1,0 +1,120 @@
+@layer base {
+    :root {
+        --ilw-call-to-action--padding-top: 6.25rem; /*var: Top padding inside the component*/
+        --ilw-call-to-action--padding-right: 30px; /*var: Right padding inside the component*/
+        --ilw-call-to-action--padding-bottom: 5.75rem; /*var: Bottom padding inside the component*/
+        --ilw-call-to-action--padding-left: 30px; /*var: Left padding inside the component*/
+        --ilw-call-to-action--content-max-width: 814px; /*var: Maximum width of the content area, excluding the icon*/
+
+        --ilw-call-to-action--icon-margin: 2rem; /*var: Spacing between icon and content*/
+        --ilw-call-to-action--icon-width: 8rem; /*var: Icon maximum width*/
+        --ilw-call-to-action--icon-height: 6.5rem; /*var: Icon maximum height*/
+        
+        --ilw-call-to-action--background: var(--il-storm-lighter-4); /*var: CSS background for the component*/
+        --ilw-call-to-action--icon-color: var(--il-blue); /*var: Color of an icon in the component*/
+        --ilw-call-to-action--heading-color: var(--il-blue); /*var: Color of a heading in the component*/
+        --ilw-call-to-action--text-color: var(--ilw-text--color); /*var: Color of text in the component*/
+
+        /* Links need to be colored differently depending on the theme */
+        --ilw-call-to-action--link: var(--ilw-link--color); /*var: Color for links inside the component */
+        --ilw-call-to-action--link-focus: var(--ilw-link--focused-color);  /*var: Focus and hover color for links inside the component*/
+        --ilw-call-to-action--link-visited: var(--ilw-link--visited-color);  /*var: Visited link color for inside the component*/
+    }
+
+    ilw-call-to-action[theme="white"] {
+        --ilw-call-to-action--background: #ffffff;
+    }
+
+    ilw-call-to-action[theme="blue"] {
+        --ilw-call-to-action--background: var(--il-blue);
+        --ilw-call-to-action--icon-color: #ffffff;
+        --ilw-call-to-action--heading-color: #ffffff;
+        --ilw-call-to-action--text-color: #ffffff;
+
+        --ilw-call-to-action--link: #ffffff; 
+        --ilw-call-to-action--link-focus: var(--il-orange);
+        --ilw-call-to-action--link-visited: #fff;
+
+        /* Buttons also need color changes with themes, but overriding classes on
+        the buttons themselves should take precedence over these. */
+        --ilw-button--background-color: var(--il-blue);
+        --ilw-button--foreground-color: #ffffff;
+        --ilw-button--border-color: #ffffff;
+        --ilw-button--focused-background-color: #fff;
+        --ilw-button--focused-foreground-color: var(--il-blue);
+        --ilw-button--focused-border-color: var(--il-blue);
+    }
+
+    ilw-call-to-action[theme="blue-gradient"] {
+        --ilw-call-to-action--background: linear-gradient(
+            160deg,
+            var(--il-industrial) 20%,
+            var(--il-blue) 100%
+        );
+        --ilw-call-to-action--icon-color: #ffffff;
+        --ilw-call-to-action--heading-color: #ffffff;
+        --ilw-call-to-action--text-color: #ffffff;
+
+        --ilw-call-to-action--link: #ffffff;
+        --ilw-call-to-action--link-focus: var(--il-orange);
+        --ilw-call-to-action--link-visited: #fff; 
+
+        --ilw-button--background-color: var(--il-blue);
+        --ilw-button--foreground-color: #ffffff;
+        --ilw-button--border-color: #ffffff;
+        --ilw-button--focused-background-color: #fff;
+        --ilw-button--focused-foreground-color: var(--il-blue);
+        --ilw-button--focused-border-color: var(--il-blue);
+    }
+}
+
+ilw-call-to-action {
+    container-type: inline-size;
+    background: var(--ilw-call-to-action--background);
+    padding-top: var(--ilw-call-to-action--padding-top);
+    padding-right: var(--ilw-call-to-action--padding-right);
+    padding-bottom: var(--ilw-call-to-action--padding-bottom);
+    padding-left: var(--ilw-call-to-action--padding-left);
+    color: var(--ilw-call-to-action--text-color);
+
+    .ilw-buttons {
+        justify-content: left;
+    }
+
+    &[align="center"] {
+        text-align: center;
+        
+        .ilw-buttons {
+            justify-content: center;
+        }
+    }
+    
+    a {
+        color: var(--ilw-call-to-action--link);
+        &:visited {
+            color: var(--ilw-call-to-action--link-visited);
+        }
+        &:hover {
+            color: var(--ilw-call-to-action--link-focus);
+        }
+    }
+    
+    & > h2,
+    & > h3,
+    & > h4,
+    & > h5,
+    & > h6 {
+        color: var(--ilw-call-to-action--heading-color);
+        font-size: 1.944em;
+
+        &:first-of-type {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* Make il icons color currentColor in the component */
+ilw-call-to-action path.cls-1 {
+    fill: currentColor;
+}

@@ -4,9 +4,9 @@
     "github": "https://github.com/web-illinois/ilw-call-to-action/",
     "type": "web component",
     "element-name": "ilw-call-to-action",
-    "description": "Description for builder.",
+    "description": "Call to action component to prompt visitors to perform an action or a few related actions.",
     "version": "1.0.0-alpha",
-    "date": "08/15/2024",
+    "date": "08/21/2024",
     "css": "https://dev.toolkit.illinois.edu/ilw-call-to-action/1.0.0-alpha/ilw-call-to-action.css",
     "js": "https://dev.toolkit.illinois.edu/ilw-call-to-action/1.0.0-alpha/ilw-call-to-action.js",
     "production": false,
@@ -16,7 +16,12 @@
         {
             "name": "default",
             "description": "Default information",
-            "text": "<p>Lorem ipsum</p>"
+            "text": "<svg slot=\"icon\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 7 51.26 51.26\"><defs><style>.cls-1{fill:#0c1b55;}</style></defs><g id=\"Layer_2\" data-name=\"Layer 2\"><path class=\"cls-1\" d=\"M37.92,10.39H13.33a4.08,4.08,0,0,0-4.06,4.06V28.18a4.08,4.08,0,0,0,4.06,4.06h4.76L17.55,39a1.14,1.14,0,0,0,1.95.89l7.56-7.64H37.92A4.08,4.08,0,0,0,42,28.18V14.45A4.08,4.08,0,0,0,37.92,10.39ZM19.48,23.26a1.83,1.83,0,1,1,1.83-1.83A1.83,1.83,0,0,1,19.48,23.26Zm6.15,0a1.83,1.83,0,1,1,1.83-1.83A1.83,1.83,0,0,1,25.63,23.26Zm6.15,0a1.83,1.83,0,1,1,1.83-1.83A1.83,1.83,0,0,1,31.78,23.26Z\"/></g></svg>\n<h2>Get started today</h2>\n<p>Enroll in a class after you are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student.</p>\n<ul class=\"ilw-buttons\">\n<li><a href=\"#\">Register <span class=\"ilw-sr-only\">for classes</span></a></li>\n<li><a href=\"#\">Contact us</a></li>\n</ul>"
+        },
+        {
+            "name": "iconless",
+            "description": "Without Icon",
+            "text": "<h2>Get started today</h2>\n<p>Enroll in a <a href=\"#\">a class after you</a> are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student.</p>\n<ul class=\"ilw-buttons\">\n<li><a href=\"#\">Register <span class=\"ilw-sr-only\">for classes</span></a></li>\n<li><a href=\"#\">Contact us</a></li>\n</ul>"
         }
     ],
     "attributes-fixed": [],
@@ -28,14 +33,98 @@
             "depreciated": false,
             "values": [
                 "",
+                "white",
                 "blue",
-                "orange",
-                "white"
+                "blue-gradient"
+            ]
+        },
+        {
+            "name": "align",
+            "description": "Align text",
+            "depreciated": false,
+            "values": [
+                "",
+                "center"
             ]
         }
     ],
     "classes-fixed": [],
     "classes": [],
     "css-variables": [
+        {
+            "name": "--ilw-call-to-action--padding-top",
+            "depreciated": false,
+            "description": "Top padding inside the component"
+        },
+        {
+            "name": "--ilw-call-to-action--padding-right",
+            "depreciated": false,
+            "description": "Right padding inside the component"
+        },
+        {
+            "name": "--ilw-call-to-action--padding-bottom",
+            "depreciated": false,
+            "description": "Bottom padding inside the component"
+        },
+        {
+            "name": "--ilw-call-to-action--padding-left",
+            "depreciated": false,
+            "description": "Left padding inside the component"
+        },
+        {
+            "name": "--ilw-call-to-action--content-max-width",
+            "depreciated": false,
+            "description": "Maximum width of the content area, excluding the icon"
+        },
+        {
+            "name": "--ilw-call-to-action--icon-margin",
+            "depreciated": false,
+            "description": "Spacing between icon and content"
+        },
+        {
+            "name": "--ilw-call-to-action--icon-width",
+            "depreciated": false,
+            "description": "Icon maximum width"
+        },
+        {
+            "name": "--ilw-call-to-action--icon-height",
+            "depreciated": false,
+            "description": "Icon maximum height"
+        },
+        {
+            "name": "--ilw-call-to-action--background",
+            "depreciated": false,
+            "description": "CSS background for the component"
+        },
+        {
+            "name": "--ilw-call-to-action--icon-color",
+            "depreciated": false,
+            "description": "Color of an icon in the component"
+        },
+        {
+            "name": "--ilw-call-to-action--heading-color",
+            "depreciated": false,
+            "description": "Color of a heading in the component"
+        },
+        {
+            "name": "--ilw-call-to-action--text-color",
+            "depreciated": false,
+            "description": "Color of text in the component"
+        },
+        {
+            "name": "--ilw-call-to-action--link",
+            "depreciated": false,
+            "description": "Color for links inside the component "
+        },
+        {
+            "name": "--ilw-call-to-action--link-focus",
+            "depreciated": false,
+            "description": "Focus and hover color for links inside the component"
+        },
+        {
+            "name": "--ilw-call-to-action--link-visited",
+            "depreciated": false,
+            "description": "Visited link color for inside the component"
+        }
     ]
 }
