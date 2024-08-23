@@ -19,6 +19,11 @@
             "text": "<svg slot=\"icon\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 7 51.26 51.26\"><defs><style>.cls-1{fill:#0c1b55;}</style></defs><g id=\"Layer_2\" data-name=\"Layer 2\"><path class=\"cls-1\" d=\"M37.92,10.39H13.33a4.08,4.08,0,0,0-4.06,4.06V28.18a4.08,4.08,0,0,0,4.06,4.06h4.76L17.55,39a1.14,1.14,0,0,0,1.95.89l7.56-7.64H37.92A4.08,4.08,0,0,0,42,28.18V14.45A4.08,4.08,0,0,0,37.92,10.39ZM19.48,23.26a1.83,1.83,0,1,1,1.83-1.83A1.83,1.83,0,0,1,19.48,23.26Zm6.15,0a1.83,1.83,0,1,1,1.83-1.83A1.83,1.83,0,0,1,25.63,23.26Zm6.15,0a1.83,1.83,0,1,1,1.83-1.83A1.83,1.83,0,0,1,31.78,23.26Z\"/></g></svg>\n<h2>Get started today</h2>\n<p>Enroll in a class after you are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student.</p>\n<ul class=\"ilw-buttons\">\n<li><a href=\"#\">Register <span class=\"ilw-sr-only\">for classes</span></a></li>\n<li><a href=\"#\">Contact us</a></li>\n</ul>"
         },
         {
+            "name": "external icon",
+            "description": "Illinois brand CDN icon",
+            "text": "<img src=\"https://cdn.brand.illinois.edu/icons/line/blue/faq.svg\" alt=\"\" slot=\"icon\">\n<h2>Get started today</h2>\n<p>Enroll in a class after you are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student.</p>\n<ul class=\"ilw-buttons\">\n<li><a href=\"#\">Register <span class=\"ilw-sr-only\">for classes</span></a></li>\n<li><a href=\"#\">Contact us</a></li>\n</ul>"
+        },
+        {
             "name": "iconless",
             "description": "Without Icon",
             "text": "<h2>Get started today</h2>\n<p>Enroll in a <a href=\"#\">a class after you</a> are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student.</p>\n<ul class=\"ilw-buttons\">\n<li><a href=\"#\">Register <span class=\"ilw-sr-only\">for classes</span></a></li>\n<li><a href=\"#\">Contact us</a></li>\n</ul>"
