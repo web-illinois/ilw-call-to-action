@@ -56,5 +56,6 @@ export default css`
 .call-to-action-content {
     max-width: var(--ilw-call-to-action--content-max-width);
     flex: 1;
+    padding: var(--ilw-call-to-action--content-padding);
 }
 `;

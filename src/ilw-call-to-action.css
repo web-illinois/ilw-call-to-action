@@ -5,6 +5,7 @@
         --ilw-call-to-action--padding-bottom: 5.75rem; /*var: Bottom padding inside the component*/
         --ilw-call-to-action--padding-left: 30px; /*var: Left padding inside the component*/
         --ilw-call-to-action--content-max-width: 814px; /*var: Maximum width of the content area, excluding the icon*/
+        --ilw-call-to-action--content-padding: 20px; /*var: Padding of the content area*/
 
         --ilw-call-to-action--icon-margin: 2rem; /*var: Spacing between icon and content*/
         --ilw-call-to-action--icon-width: 8rem; /*var: Icon maximum width*/

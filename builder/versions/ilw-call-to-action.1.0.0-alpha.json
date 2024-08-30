@@ -90,6 +90,11 @@
             "description": "Maximum width of the content area, excluding the icon"
         },
         {
+            "name": "--ilw-call-to-action--content-padding",
+            "depreciated": false,
+            "description": "Padding of the content area"
+        },
+        {
             "name": "--ilw-call-to-action--icon-margin",
             "depreciated": false,
             "description": "Spacing between icon and content"
