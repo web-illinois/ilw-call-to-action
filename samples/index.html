@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Call To Action Component</title>
     <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
     <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
     <script type="module" src="/src/ilw-call-to-action.js"></script>
     <style>
-                body {
+        body {
             padding: 15px;
             font-size: 18px;
             font-family: var(--il-font-sans);
@@ -19,34 +19,48 @@
 </head>
 
 <body style="margin: 0; padding: 0;">
-<ilw-call-to-action theme="white">
-    <img src="https://cdn.brand.illinois.edu/icons/line/blue/faq.svg" alt="" slot="icon">
-    <h2>Get started today</h2>
-    <p>Enroll in a class after you are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student.</p>
-    <ul class="ilw-buttons">
-        <li><a href="#">Register <span class="ilw-sr-only">for classes</span></a></li>
-        <li><a href="#">Contact us</a></li>
-    </ul>
-</ilw-call-to-action>
-<ilw-call-to-action align="center" theme="blue">
-
-<h2>Get started today</h2>
-<p>Enroll in a <a href="#">a class after you</a> are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student.</p>
-<ul class="ilw-buttons">
-<li><a href="#">Register <span class="ilw-sr-only">for classes</span></a></li>
-<li><a href="#">Contact us</a></li>
-</ul>
-</ilw-call-to-action>
-</ilw-call-to-action>
-<ilw-call-to-action theme="blue-gradient">
-    <svg slot="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 7 51.26 51.26"><defs><style>.cls-1{fill:#0c1b55;}</style></defs><g id="Layer_2" data-name="Layer 2"><path class="cls-1" d="M37.92,10.39H13.33a4.08,4.08,0,0,0-4.06,4.06V28.18a4.08,4.08,0,0,0,4.06,4.06h4.76L17.55,39a1.14,1.14,0,0,0,1.95.89l7.56-7.64H37.92A4.08,4.08,0,0,0,42,28.18V14.45A4.08,4.08,0,0,0,37.92,10.39ZM19.48,23.26a1.83,1.83,0,1,1,1.83-1.83A1.83,1.83,0,0,1,19.48,23.26Zm6.15,0a1.83,1.83,0,1,1,1.83-1.83A1.83,1.83,0,0,1,25.63,23.26Zm6.15,0a1.83,1.83,0,1,1,1.83-1.83A1.83,1.83,0,0,1,31.78,23.26Z"/></g></svg>
-    <h2>Get started today</h2>
-    <p>Enroll in a class after you are admitted as a non-degree student.</p>
-    <ul class="ilw-buttons">
-        <li><a href="#">Register <span class="ilw-sr-only">for classes</span></a></li>
-        <li><a href="#">Contact us</a></li>
-    </ul>
-</ilw-call-to-action>
+<div style="width: 800px; margin: auto">
+    <ilw-call-to-action theme="white">
+        <img src="https://cdn.brand.illinois.edu/icons/line/blue/faq.svg" alt="" slot="icon">
+        <h2>Get started today</h2>
+        <p>Enroll in a class after you are admitted as a non-degree student. Enroll in a class after you are admitted as
+            a
+            non-degree student. Enroll in a class after you are admitted as a non-degree student.</p>
+        <ul class="ilw-buttons">
+            <li><a href="#">Register <span class="ilw-sr-only">for classes</span></a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </ilw-call-to-action>
+    <ilw-call-to-action align="center" theme="blue" width="full">
+        <h2>Get started today</h2>
+        <p>Enroll in a <a href="#">a class after you</a> are admitted as a non-degree student. Enroll in a class after
+            you
+            are admitted as a non-degree student. Enroll in a class after you are admitted as a non-degree student.</p>
+        <ul class="ilw-buttons">
+            <li><a href="#">Register <span class="ilw-sr-only">for classes</span></a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </ilw-call-to-action>
+    <ilw-call-to-action theme="blue-gradient">
+        <svg slot="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 7 51.26 51.26">
+            <defs>
+                <style>.cls-1 {
+                    fill: #0c1b55;
+                }</style>
+            </defs>
+            <g id="Layer_2" data-name="Layer 2">
+                <path class="cls-1"
+                      d="M37.92,10.39H13.33a4.08,4.08,0,0,0-4.06,4.06V28.18a4.08,4.08,0,0,0,4.06,4.06h4.76L17.55,39a1.14,1.14,0,0,0,1.95.89l7.56-7.64H37.92A4.08,4.08,0,0,0,42,28.18V14.45A4.08,4.08,0,0,0,37.92,10.39ZM19.48,23.26a1.83,1.83,0,1,1,1.83-1.83A1.83,1.83,0,0,1,19.48,23.26Zm6.15,0a1.83,1.83,0,1,1,1.83-1.83A1.83,1.83,0,0,1,25.63,23.26Zm6.15,0a1.83,1.83,0,1,1,1.83-1.83A1.83,1.83,0,0,1,31.78,23.26Z"/>
+            </g>
+        </svg>
+        <h2>Get started today</h2>
+        <p>Enroll in a class after you are admitted as a non-degree student.</p>
+        <ul class="ilw-buttons">
+            <li><a href="#">Register <span class="ilw-sr-only">for classes</span></a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </ilw-call-to-action>
+</div>
 </body>
 
 </html>

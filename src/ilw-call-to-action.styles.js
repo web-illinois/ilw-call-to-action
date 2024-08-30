@@ -8,11 +8,26 @@ export default css`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background: var(--ilw-call-to-action--background);
+    padding-top: var(--ilw-call-to-action--padding-top);
+    padding-right: var(--ilw-call-to-action--padding-right);
+    padding-bottom: var(--ilw-call-to-action--padding-bottom);
+    padding-left: var(--ilw-call-to-action--padding-left);
 
     column-gap: var(--ilw-call-to-action--icon-margin);
     row-gap: var(--ilw-call-to-action--icon-margin);
 }
-
+    
+.call-to-action.fixed {
+    left:50%;
+    margin-left:-50vw;
+    margin-right:-50vw;
+    padding-left:0;
+    padding-right:0;
+    position:relative;
+    right:50%;
+    width: 100vw;
+}
 
 @container (width <= 650px) {
     .call-to-action {

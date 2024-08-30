@@ -1,14 +1,14 @@
-import { LitElement, html } from 'lit';
-import styles from './ilw-call-to-action.styles';
-import './ilw-call-to-action.css';
+import { LitElement, html } from "lit";
+import styles from "./ilw-call-to-action.styles";
+import "./ilw-call-to-action.css";
 import { classMap } from "lit/directives/class-map.js";
 
 class CallToAction extends LitElement {
-
     static get properties() {
         return {
             theme: {},
             align: {},
+            width: {},
             _hasGraphic: { state: true, type: Boolean },
         };
     }
@@ -19,8 +19,9 @@ class CallToAction extends LitElement {
 
     constructor() {
         super();
-        this.theme = 'gray';
-        this.align = 'left';
+        this.theme = "gray";
+        this.align = "left";
+        this.width = "auto";
         this._hasGraphic = false;
     }
 
@@ -43,6 +44,8 @@ class CallToAction extends LitElement {
         const classes = {
             "call-to-action": true,
             graphic: this._hasGraphic,
+            fixed: this.width === "full",
+            page: this.width === "page",
         };
         return html`
             <div class=${classMap(classes)}>
@@ -57,4 +60,4 @@ class CallToAction extends LitElement {
     }
 }
 
-customElements.define('ilw-call-to-action', CallToAction);
+customElements.define("ilw-call-to-action", CallToAction);

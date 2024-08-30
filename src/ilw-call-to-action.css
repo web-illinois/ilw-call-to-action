@@ -69,12 +69,7 @@
 }
 
 ilw-call-to-action {
-    container-type: inline-size;
-    background: var(--ilw-call-to-action--background);
-    padding-top: var(--ilw-call-to-action--padding-top);
-    padding-right: var(--ilw-call-to-action--padding-right);
-    padding-bottom: var(--ilw-call-to-action--padding-bottom);
-    padding-left: var(--ilw-call-to-action--padding-left);
+    contain: layout;
     color: var(--ilw-call-to-action--text-color);
 
     .ilw-buttons {
