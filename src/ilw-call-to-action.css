@@ -19,6 +19,8 @@
         --ilw-call-to-action--link: var(--ilw-link--color); /*var: Color for links inside the component */
         --ilw-call-to-action--link-focus: var(--ilw-link--focused-color);  /*var: Focus and hover color for links inside the component*/
         --ilw-call-to-action--link-visited: var(--ilw-link--visited-color);  /*var: Visited link color for inside the component*/
+
+        --root-page-width: calc(100vw - (100vw - 100%));
     }
 
     ilw-call-to-action[theme="white"] {
@@ -69,7 +71,7 @@
 }
 
 ilw-call-to-action {
-    contain: layout;
+    container-type: inline-size;
     color: var(--ilw-call-to-action--text-color);
 
     .ilw-buttons {
