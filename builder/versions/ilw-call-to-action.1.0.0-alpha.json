@@ -51,6 +51,14 @@
                 "",
                 "center"
             ]
+        },		{
+            "name": "width",
+            "description": "Width of component",
+            "depreciated": false,
+            "values": [
+                "",
+                "full"
+            ]
         }
     ],
     "classes-fixed": [],
