@@ -43,3 +43,17 @@ text. There are a few attributes to control the component:
 - **Centered text** can be harder to read, so avoid using longer text when
   center aligning.
 - Make sure links and buttons are descriptive, using `ilw-sr-only` if needed to add context.
+
+## Upgrade Process
+
+When upgrading from the v2 toolkit component, the following changes are needed:
+
+- Rename all `il-call-to-action` to `ilw-call-to-action`.
+- Replace uses of the theme classes with an attribute:
+  - `class="il-theme-gray"` -> `theme="gray"`
+  - `class="il-theme-blue"` -> `theme="blue"`
+  - `class="il-theme-white"` -> `theme="white"`
+  - `class="il-theme-blue-gradient"` -> `theme="blue-gradient"`
+- Replace uses of the alignment classes with an attribute:
+  - `class="il-align-left"` -> `align="left"`
+  - `class="il-align-center"` -> `align="center"`
