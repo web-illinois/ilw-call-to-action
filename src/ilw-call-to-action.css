@@ -99,11 +99,11 @@ ilw-call-to-action {
         }
     }
     
-    & > h2,
-    & > h3,
-    & > h4,
-    & > h5,
-    & > h6 {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: var(--ilw-call-to-action--heading-color);
         font-size: 1.944em;
 
