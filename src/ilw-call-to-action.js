@@ -1,5 +1,5 @@
-import { LitElement, html } from "lit";
-import styles from "./ilw-call-to-action.styles";
+import {LitElement, html, unsafeCSS} from "lit";
+import styles from "./ilw-call-to-action.styles.css?inline";
 import "./ilw-call-to-action.css";
 import { classMap } from "lit/directives/class-map.js";
 
@@ -14,7 +14,7 @@ class CallToAction extends LitElement {
     }
 
     static get styles() {
-        return styles;
+        return unsafeCSS(styles);
     }
 
     constructor() {
