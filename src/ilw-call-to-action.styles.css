@@ -9,7 +9,7 @@
 
         --ilw-call-to-action--icon-margin: 2rem; /*var: Spacing between icon and content*/
         --ilw-call-to-action--icon-width: 8rem; /*var: Icon maximum width*/
-        --ilw-call-to-action--icon-height: 6.5rem; /*var: Icon maximum height*/
+        --ilw-call-to-action--icon-height: 6.5rem; /*var: Icon maximum  height*/
 
         --ilw-call-to-action--background: var(--il-storm-lighter-4); /*var: CSS background for the component*/
         --ilw-call-to-action--icon-color: var(--il-blue); /*var: Color of an icon in the component*/
@@ -121,11 +121,6 @@
     max-width: var(--ilw-call-to-action--icon-width);
     max-height: var(--ilw-call-to-action--icon-height);
     flex: 1;
-
-    ::slotted(*) {
-        display: block;
-        min-width: var(--ilw-call-to-action--icon-width);
-    }
 }
 
 .graphic .call-to-action-icon {

@@ -41,6 +41,11 @@ ilw-call-to-action {
             margin-bottom: 0;
         }
     }
+
+    [slot="icon"] {
+        display: block;
+        min-width: var(--ilw-call-to-action--icon-width);
+    }
 }
 
 /* Make il icons color currentColor in the component */
