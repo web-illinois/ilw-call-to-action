@@ -6,7 +6,7 @@
     "element-name": "ilw-call-to-action",
     "description": "Call to action component to prompt visitors to perform an action or a few related actions.",
     "purpose": "Prompt users to perform highlighted actions.",
-    "toolkit-version": "",
-    "production-version": "",
+    "toolkit-version": "1.0",
+    "production-version": "1.0",
     "development-version": "1.0-beta"
 }
