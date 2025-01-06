@@ -1,5 +1,6 @@
 @layer base {
     :host {
+        --ilw-call-to-action--font: var(--il-font-sans); /*var: Font family for the content*/
         --ilw-call-to-action--padding-top: 6.25rem; /*var: Top padding inside the component*/
         --ilw-call-to-action--padding-right: 30px; /*var: Right padding inside the component*/
         --ilw-call-to-action--padding-bottom: 5.75rem; /*var: Bottom padding inside the component*/
@@ -77,7 +78,7 @@
 
     container-type: inline-size;
     color: var(--ilw-call-to-action--text-color);
-
+    font-family: var(--ilw-call-to-action--font);
 }
 
 :host([align="center"]) {
