@@ -1,17 +1,24 @@
-import {LitElement, html, unsafeCSS} from "lit";
+import { html, LitElement, unsafeCSS } from "lit";
+// @ts-ignore
 import styles from "./ilw-call-to-action.styles.css?inline";
 import "./ilw-call-to-action.css";
 import { classMap } from "lit/directives/class-map.js";
 
-class CallToAction extends LitElement {
-    static get properties() {
-        return {
-            theme: {},
-            align: {},
-            width: {},
-            _hasGraphic: { state: true, type: Boolean },
-        };
-    }
+import { customElement, property, state } from "lit/decorators.js";
+
+@customElement("ilw-call-to-action")
+export default class CallToAction extends LitElement {
+    @property()
+    theme: string = "";
+
+    @property()
+    align: string = "";
+
+    @property()
+    width: string = "";
+
+    @state()
+    _hasGraphic: boolean | undefined = undefined;
 
     static get styles() {
         return unsafeCSS(styles);
@@ -32,8 +39,8 @@ class CallToAction extends LitElement {
      * @private
      */
     _slotsChanged() {
-        const icons = this.shadowRoot.querySelector("slot[name=icon]");
-        if (icons.assignedElements().length > 0) {
+        const icons = this.shadowRoot?.querySelector<HTMLSlotElement>("slot[name=icon]");
+        if (icons?.assignedElements()?.length) {
             this._hasGraphic = true;
             return;
         }
@@ -43,7 +50,7 @@ class CallToAction extends LitElement {
     render() {
         const classes = {
             "call-to-action": true,
-            graphic: this._hasGraphic,
+            graphic: !!this._hasGraphic,
             fixed: this.width === "full",
             page: this.width === "page",
         };
@@ -60,4 +67,8 @@ class CallToAction extends LitElement {
     }
 }
 
-customElements.define("ilw-call-to-action", CallToAction);
+declare global {
+    interface HTMLElementTagNameMap {
+        "ilw-call-to-action": CallToAction;
+    }
+}
