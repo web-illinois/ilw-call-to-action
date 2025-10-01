@@ -1,5 +1,4 @@
 ilw-call-to-action {
-
     .ilw-buttons {
         justify-content: left;
     }
@@ -11,20 +10,20 @@ ilw-call-to-action {
     }
 
     a {
-        color: var(--ilw-call-to-action--link);
+        color: var(--ilw-color--link);
 
         &:visited {
-            color: var(--ilw-call-to-action--link-visited);
+            color: var(--ilw-color--link-visited);
         }
 
         &:hover {
-            color: var(--ilw-call-to-action--link-focus);
+            color: var(--ilw-color--link-hover);
         }
 
         &:focus {
-            color: var(--ilw-link--focus-color);
-            background-color: var(--ilw-link--focus-background-color);
-            outline: var(--ilw-link--focus-outline);
+            color: var(--ilw-color--focus--text);
+            background-color: var(--ilw-color--focus--background);
+            outline-color: var(--ilw-color--focus--outline);
         }
     }
 
@@ -33,7 +32,7 @@ ilw-call-to-action {
     h4,
     h5,
     h6 {
-        color: var(--ilw-call-to-action--heading-color);
+        color: var(--ilw-color--heading);
         font-size: 1.944em;
 
         &:first-of-type {
@@ -42,9 +41,41 @@ ilw-call-to-action {
         }
     }
 
+    .ilw-buttons,
+    .ilw-button {
+        &:not([class^="ilw-theme-"]) {
+            &:is(a, button),
+            a,
+            button {
+                background: var(--ilw-color--control);
+                color: var(--ilw-color--control-text);
+                border-color: var(--ilw-color--control-text);
+
+                &:hover {
+                    background: var(--ilw-color--control-text);
+                    color: var(--ilw-color--control);
+                    border-color: var(--ilw-color--control-text);
+                }
+
+                &:focus-visible {
+                    background-color: var(--ilw-color--focus--background);
+                    color: var(--ilw-color--focus--text);
+                    outline-color: var(--ilw-color--focus--outline);
+                }
+
+                &:active {
+                    background: var(--ilw-color--control-accent);
+                    color: var(--ilw-color--control-accent-text);
+                }
+            }
+        }
+    }
+
     [slot="icon"] {
         display: block;
+        color: var(--ilw-color--heading);
         min-width: var(--ilw-call-to-action--icon-width);
+        font-size: var(--ilw-call-to-action--icon-width);
     }
 }
 

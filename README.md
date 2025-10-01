@@ -15,7 +15,7 @@ text. There are a few attributes to control the component:
 
 - The left side can have an icon using `slot="icon"`, which will move to be above
   the heading in smaller screen sizes.
-- Color themes for `white`, `blue` and `blue-gradient`. For example, `theme="blue"`.
+- Color themes for `white`, `blue`, `blue-gradient`, `orange` and `orange-gradient`. For example, `theme="blue"`.
 - Text content can be centered using `align="center"`. With large screen sizes,
   the icon slot will remain on the left, and the text center aligns in its 
   container.
@@ -42,7 +42,7 @@ text. There are a few attributes to control the component:
   `alt=""` attribute. For inline `svg`, use `aria-hidden="true"`.
 - **Centered text** can be harder to read, so avoid using longer text when
   center aligning.
-- Make sure links and buttons are descriptive, using `ilw-sr-only` if needed to add context.
+- Make sure links and buttons are descriptive.
 
 ## Upgrade Process
 

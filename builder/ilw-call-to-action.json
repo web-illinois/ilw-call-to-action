@@ -8,5 +8,5 @@
     "purpose": "Prompt users to perform highlighted actions.",
     "toolkit-version": "1.0",
     "production-version": "1.0",
-    "development-version": "1.0-beta"
+    "development-version": "1.1-beta"
 }

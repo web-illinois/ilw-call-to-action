@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import dts from "vite-plugin-dts";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -7,19 +8,16 @@ export default defineConfig({
         outDir: "../dist",
         lib: {
             name: "ilw-call-to-action",
-            entry: "ilw-call-to-action.js",
+            entry: "ilw-call-to-action.ts",
             fileName: "ilw-call-to-action",
-            formats: ["es", "cjs", "umd"],
+            formats: ["es"],
         },
         rollupOptions: {
-            output: {
-                assetFileNames: (chunkInfo) => {
-                    if (chunkInfo.name === "style.css") return "ilw-call-to-action.css";
-                },
-            },
+            external: [/^@?lit/, /^@illinois-toolkit/],
         },
     },
     server: {
         hmr: false,
     },
+    plugins: [dts()],
 });
