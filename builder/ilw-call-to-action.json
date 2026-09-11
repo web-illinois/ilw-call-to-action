@@ -1,12 +1,26 @@
 {
-    "title": "Call To Action",
-    "tag": "ilw-call-to-action",
-    "github": "https://github.com/web-illinois/ilw-call-to-action/",
-    "type": "web component",
-    "element-name": "ilw-call-to-action",
-    "description": "Call to action component to prompt visitors to perform an action or a few related actions.",
-    "purpose": "Prompt users to perform highlighted actions.",
-    "toolkit-version": "1.2",
-    "production-version": "1.2",
-    "development-version": "latest"
+  "title": "Call To Action",
+  "id": "ilw-call-to-action",
+  "type": "Web Component",
+  "repository-name": "ilw-call-to-action",
+  "description": "Draw attention to one or more related actions and give visitors a clear next step.",
+  "purpose": "Prompt users to perform highlighted actions.",
+  "customtemplates": [],
+  "versions": [
+    {
+      "name": "1.0",
+      "notes": "",
+      "template": "1.0"
+    },
+    {
+      "name": "1.1",
+      "notes": "",
+      "template": "1.1"
+    },
+    {
+      "name": "1.2",
+      "notes": "",
+      "template": "1.2"
+    }
+  ]
 }
